@@ -1,0 +1,20 @@
+{
+  "name": "cmd-yz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clanting1997/cmd-yz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clanting1997/cmd-yz/issues"
+  },
+  "homepage": "https://github.com/clanting1997/cmd-yz#readme"
+}
