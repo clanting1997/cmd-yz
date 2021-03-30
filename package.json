@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && NODE_ENV=production webpack",
+    "build-dev": "webpack",
+    "clean": "rm -rf dist",
+    "start": "webpack serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/clanting1997/cmd-yz/issues"
   },
-  "homepage": "https://github.com/clanting1997/cmd-yz#readme"
+  "homepage": "https://github.com/clanting1997/cmd-yz#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
+    "html-webpack-plugin": "^5.3.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
 }
