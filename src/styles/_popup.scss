@@ -1,0 +1,39 @@
+.popup-overlay {
+  align-items: center;
+  background: $bg-overlay;
+  display:none;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+
+  .popup-wrapper {
+    background: $red;
+    color: $yellow;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    padding: 25px;
+    position: relative;
+    width: 50vh;
+
+    .popup-question {
+
+    }
+
+    .popup-close {
+      cursor: pointer;
+      font-weight: 700;
+      position: absolute;
+      right: 25px;
+      top: 25px;
+    }
+
+    .popup-content {
+
+    }
+  }
+}
