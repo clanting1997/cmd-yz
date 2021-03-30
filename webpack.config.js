@@ -1,3 +1,5 @@
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 let mode = "development"
 
 if (process.env.NODE_ENV === "production") {
@@ -12,6 +14,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.s?css$/i,
+                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+            },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
@@ -25,9 +31,11 @@ module.exports = {
     devtool: "source-map",
     devServer: {
         contentBase: "./dist",
+        hot: true,
     },
     
     plugins: [
+        new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
             template: "./src/index.html",
         })
